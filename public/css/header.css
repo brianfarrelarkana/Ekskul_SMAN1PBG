@@ -1,0 +1,100 @@
+header {
+  background-color: #c2e8ff;
+  color: #0A2B4C;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-area img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 3px;
+  max-height: 80px;
+}
+
+.school-info .extra-info {
+    font-weight: bold;
+}
+
+nav#main-nav ul li a.active {
+    font-weight: bold;
+}
+
+header nav#main-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 22px;
+}
+
+header nav ul li:first-child {
+  margin-left: 0;
+}
+
+header nav ul li a {
+  color: #0A2B4C;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: #0A2B4C;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  background: #0A2B4C;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  z-index: 1001;
+  border-radius: 5px;
+  position: fixed;
+  left: 15px;
+  top: 75px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: #333;
+}

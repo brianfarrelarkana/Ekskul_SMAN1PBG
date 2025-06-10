@@ -1,0 +1,239 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #0A2B4C;
+}
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #042558;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-section img {
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.school-text {
+  text-align: center;
+}
+
+.school-text .small {
+  font-size: 0.7rem;
+  display: block;
+}
+
+.school-text h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 4px 0 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #294578;
+}
+
+.logout {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  background: none;
+  border: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.logout:hover {
+    background-color: red;
+}
+
+.logout img {
+  width: 15px;
+  height: 18px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px 30px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.main-content h3 {
+    color: black;
+    font-weight: 100;
+    margin-block-start: 0.5rem;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.stat-box {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.stat-box p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  margin: 10px 0 0;
+}
+
+.ekskul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ekskul-card {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 16px;
+  position: relative;
+}
+
+.ekskul-thumb {
+  width: 64px;
+  height: 64px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ekskul-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ekskul-info h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0A2B4C;
+}
+
+.ekskul-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+footer {
+  background-color: #f0e9e6;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #042558;
+  border: none;
+  font-size: 26px;
+  z-index: 999;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 998;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .content-area {
+    padding-top: 70px;
+  }
+}

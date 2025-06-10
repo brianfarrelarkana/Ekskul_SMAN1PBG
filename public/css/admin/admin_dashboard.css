@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #0A2B4C;
+}
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #042558;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-section img {
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.school-text {
+  text-align: center;
+}
+
+.school-text .small {
+  font-size: 0.7rem;
+  display: block;
+}
+
+.school-text h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 4px 0 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #294578;
+}
+
+.logout {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.logout:hover {
+    background-color: red;
+}
+
+.logout img {
+  width: 15px;
+  height: 18px;
+}
+
+footer {
+  background-color: #f0e9e6;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #042558;
+  border: none;
+  font-size: 26px;
+  z-index: 999;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 998;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .content-area {
+    padding-top: 70px;
+  }
+}

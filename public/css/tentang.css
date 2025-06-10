@@ -1,0 +1,138 @@
+#tentang {
+  background-color: #042558;
+  color: #fff;
+  padding: 50px 0;
+}
+
+#tentang a {
+    color: white;
+    text-decoration: none;
+}
+
+#tentang .container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.tentang-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.tentang-img-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tentang-img-wrapper img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tentang-img-wrapper img:last-child {
+  margin-bottom: 0;
+}
+
+.tentang-left, .tentang-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+}
+
+.tentang-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tentang-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tentang-header img {
+  height: 80px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.tentang-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#tentang h3 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 25px 0 10px;
+  font-size: 1.2rem;
+}
+
+#tentang p,
+#tentang ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+#tentang ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.tentang-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tentang-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #517ead, #6f8fb4);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tentang-link a:hover {
+  background: linear-gradient(90deg, #6f8fb4, #517ead);
+}
+
+@media (max-width: 768px) {
+  #tentang .container {
+    flex-direction: column;
+  }
+
+  .tentang-header img {
+    height: 60px;
+  }
+
+  .tentang-left img {
+    height: auto;
+  }
+
+  #tentang h3 {
+    font-size: 1.1rem;
+  }
+
+  #tentang p,
+  #tentang ul {
+    font-size: 0.9rem;
+  }
+}

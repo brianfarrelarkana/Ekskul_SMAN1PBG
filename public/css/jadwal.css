@@ -1,0 +1,87 @@
+.jadwal-section {
+    background-color: #042558;
+    padding: 50px 0;
+}
+
+.jadwal-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.jadwal-container {
+    overflow-x: auto;
+}
+
+.jadwal-card {
+    background: #f8fbff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.judul-hari {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.jadwal-item {
+    margin-bottom: 10px;
+    background: #e6f0ff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.jadwal-item strong {
+    display: block;
+    text-align: center;
+    color: #000;
+}
+
+.jadwal-item p {
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+.jadwal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .jadwal-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .jadwal-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: max-content;
+    }
+
+    .jadwal-card {
+        min-width: 250px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .jadwal-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .jadwal-container {
+        scroll-snap-type: x mandatory;
+    }
+}

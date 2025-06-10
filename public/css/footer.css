@@ -1,0 +1,89 @@
+footer {
+  position: relative;
+  margin-top: 20px;
+  color: #0A2B4C;
+  background: #0A2B4C;
+  background-color: #e0e0e0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-contact h4,
+.footer-team h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-contact p,
+.footer-team p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-contact a,
+.footer-team a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-contact a img,
+.footer-team a img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.footer-contact a:hover,
+.footer-team a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: #ccc;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .footer-contact a {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .footer-contact a span {
+    display: inline-block;
+    line-height: 1.5;
+  }
+
+  .footer-contact a img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-top: 4px;
+  }
+}

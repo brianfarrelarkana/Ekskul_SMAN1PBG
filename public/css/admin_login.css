@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #5b86b3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.title-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 3px;
+  max-height: 80px;
+}
+
+.school-info .extra-info {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: black;
+}
+
+.school-info h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: black;
+  margin: 3px 0 0 0;
+  line-height: 1.2;
+}
+
+.title {
+  font-size: 0.85rem;
+  color: #222;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+form button[type="submit"] {
+  background-color: #042558;
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+form button:hover[type="submit"] {
+  background-color: #061d3b;
+}
+
+footer {
+  background-color: #f2e8e0;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.85rem;
+  color: #333;
+}
